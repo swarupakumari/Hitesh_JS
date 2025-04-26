@@ -1,7 +1,7 @@
 
 const name='swarupa';
 let val=1234;
-console.log(` my name is ${name}.The value is ${val} `); 
+console.log(` my name is ${name}.The value is ${val} `); //string interpolation
 const emp=new String("xyz")
 console.log(emp.charAt(2));
 console.log(emp.indexOf('y'));
