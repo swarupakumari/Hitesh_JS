@@ -131,7 +131,7 @@ function addone(num){
 
 //addTwo(5)  //here it is erroe fxn declarstion kia h or store kia h variable mai so phle call ni kr skte concept of hoisting
 const addTwo = function(num){
-    return num + 2
+    return num + ;
 }
 
 
