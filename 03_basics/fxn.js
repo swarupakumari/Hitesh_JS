@@ -136,3 +136,110 @@ const addTwo = function(num){
 
 
 addTwo(5)
+
+
+
+////++++++++++++++++++++++++++++++++++++++++++++++++++++++++++????????????????????????????????
+
+// this and arrow fxn js 
+const user = {
+    username: "hitesh",
+    price: 999,
+
+    welcomeMessage: function() {
+        console.log(`${this.username} , welcome to website`);
+        console.log(this);
+    }
+
+}
+
+// user.welcomeMessage()
+// user.username = "sam"
+// user.welcomeMessage()
+
+// console.log(this);
+
+// function chai(){
+//     let username = "hitesh"
+//     console.log(this.username);
+// }
+
+// chai()
+
+// const chai = function () {
+//     let username = "hitesh"
+//     console.log(this.username);
+// }
+
+const chai =  () => {
+    let username = "hitesh"
+    console.log(this);
+}
+
+
+// chai()
+
+// const addTwo = (num1, num2) => {
+//     return num1 + num2
+// }
+
+// const addTwo = (num1, num2) =>  num1 + num2
+
+// const addTwo = (num1, num2) => ( num1 + num2 )
+
+const addTwo = (num1, num2) => ({username: "hitesh"})
+
+
+console.log(addTwo(3, 4))
+
+
+// const myArray = [2, 5, 3, 7, 8]
+
+// myArray.forEach()
+
+
+//browser ke andar ek global object h window object
+//summary
+// 1)when we console.log 'this ' , in node environment it simply print empty object =>{}
+// 2)when we console.log 'this ' , in console environment it simply print windows  object 
+// 3)this refer to current context .context means an variable current context means current value of an variable
+// 4)this is work in object and function in object as key value but not work in function  it return undefined in node environment
+// 5)syntax of arrow function
+// a)explicit
+// ()=>{
+// return
+// }
+// b)implicit
+// ()=>() not required return
+
+
+
+
+
+
+// SUMMARY :
+
+// 1. IIFE is a function which immediately executes after it's creation . It is wriiten as one parentheses for wrapping the function and other for execution ()();
+// 2. Variables defined inside an IIFE are not accessible from outside its scope which helps to avoid conflicts with other variables or functions (global scope pollution). Means IIFE keeps variables and functions private in it.
+// 3. IIFE written with function name is named IIFE and not with name are unnamed/anonymous. 
+// 4.We can use parameter inside first parentheses.
+// 5. To write two or multiple IIFE one should be end with semicolon ;
+
+
+
+
+
+// Immediately Invoked Function Expressions (IIFE)
+
+
+(function chai(){
+    // named IIFE
+    console.log(`DB CONNECTED`);
+})();
+
+( (name) => {
+    console.log(`DB CONNECTED TWO ${name}`);
+} )('hitesh')
+
+
+
