@@ -36,6 +36,13 @@
     //     console.log("clicked inside the ul");
     // }, false)
 
+//     Event Propagation : Event propagation defines in which order the event will trigger.
+// There are 2 types of Event propagation :
+
+//  1. Event Bubbling : It is a default feature of event listener. In event bubbling the event occur from child to parent and if we want that the parent event will not occur if child event is occurring then we use stoPropagation() function .
+
+// 2.Event Capturing : Event Capturing defines the order of event from parent to child. It can be achieved by passing the third argument inside the addEventListener() "true".
+
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
     //     e.stopPropagation()
@@ -62,3 +69,13 @@
     //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
+
+
+
+
+
+<!-- s is synchronous single threaded language which executes sequentially.
+We have API's which allow us to write the asynchronous code like setTimeOut etc.
+Javascript engine = heap + call stack
+Js engine (V8) is always used with some runtime environment like browser, nodejs, deno etc for asynchronous programming.
+When JS engine finds asynchronous block it does not go in the call stack rather it goes to the task queue, then task queue add it to the call stack. -->
