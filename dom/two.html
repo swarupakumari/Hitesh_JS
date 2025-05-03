@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML); // give html collection have to convert in array for operation
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //      console.log(parent.children[i].innerHTML);
+        
+    // }
+    parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild); //first child
+    // console.log(parent.lastElementChild);  //child last one
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);//monday
+    // console.log(dayOne.parentElement);// targeting to parent element from child
+    // console.log(dayOne.nextElementSibling);// u can go to siblings also
+
+    console.log("NODES: ", parent.childNodes);//give total node complex tree structure  ek line break v nodelist ban jata h eke ek break point ka significance  h
+</script>
+</html>
+
+
+
+
+
+<!-- childNodes:
+childNodes ek property hai jo har ek parent node ke saare children nodes ko return karta hai.
+Yeh ek NodeList object return karta hai, jismein parent node ke direct children hote hain, including elements, text nodes, ya comments.
+childNodes list ke saare nodes ko include karta hai, jaise ki whitespace nodes bhi, jo parent element ke text ke beech mein hone wale extra spaces, tabs, ya line breaks hote hain. -->
