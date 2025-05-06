@@ -29,3 +29,12 @@
     const app = new React()
 </script>
 </html>
+
+
+<!-- 
+In simple terms:
+
+Without the bind method, an event listener only has access to the context (or this) of the element that triggers the event (like a button in this case). So, in your example, the handleClick event listener only has the button's context (this refers to the button itself).
+
+Using the bind method, we can set the this context to a different object, allowing us to access the context where the event listener was created, not just the button's context."
+ -->
